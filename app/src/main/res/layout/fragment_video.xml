@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/publicar_video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publicar Video"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <VideoView
+        android:id="@+id/video_preview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/publicar_video_title"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/seleccionar_video_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="Seleccionar Video"
+        android:layout_below="@id/video_preview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/video_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/seleccionar_video_button"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/publicar_video_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publicar"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/video_descripcion"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
